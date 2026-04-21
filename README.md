@@ -1,15 +1,50 @@
-# My Portfolio Wesbite by @red1-for-hek - Overview 🚀
+# Jorge Greus Portfolio
 
-If you are copying this code or forking this repo, please give a credit of my name :(
+Personal portfolio website for Jorge Greus Herrero, focused on AI engineering, machine learning, generative AI, and data systems.
 
-## Instructions 🛠️
+## Credit
 
-I have modified the gsap club plugins with the trial plugins, but with the trial plugin you cannot host it🔴. So for Club plugins, Check out here: https://gsap.com/docs/v3/Installation/
+This portfolio is based on an original portfolio project/template by [@red1-for-hek](https://github.com/red1-for-hek).
+The project has been adapted and customized for Jorge Greus, including content, structure, styling, assets, and deployment setup.
 
-**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
+## Stack
 
-- [Protfolio-Preview](https://www.redoyanulhaque.me/)
+- React
+- TypeScript
+- Vite
+- GSAP
+- Three.js
+- WebGL
+- Vercel Functions
+
+## Local Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create your local environment file:
+
+```bash
+cp .env.example .env.local
+```
+
+Add your `GROQ_API_KEY` to `.env.local`, then start the dev server:
+
+```bash
+npm run dev
+```
+
+## Production
+
+This project is configured to deploy on Vercel.
+
+- Frontend: Vite static build
+- Backend: `api/chat.js`
+- Required environment variable: `GROQ_API_KEY`
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is available under the [MIT License](LICENSE).
