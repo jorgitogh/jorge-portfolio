@@ -2,10 +2,7 @@ export interface Experience {
   position: string;
   company: string;
   period: string;
-  location: string;
   description: string;
-  responsibilities: string[];
-  technologies: string[];
 }
 
 export interface Project {
@@ -137,7 +134,7 @@ interface SiteConfig {
 }
 
 // Replace the values in this file to personalize the portfolio end to end.
-export const config = {
+export const config: SiteConfig = {
   site: {
     title: "Jorge Greus Herrero | AI Engineer",
     description:
@@ -206,10 +203,6 @@ export const config = {
     location: "Valencia, Spain",
     github: "https://github.com/jorgitogh",
     linkedin: "https://linkedin.com/in/jorge-greus",
-    twitter: "",
-    facebook: "",
-    instagram: "",
-    resume: "",
   },
   callToAction: {
     playLabel: "Play With Me →",
@@ -242,61 +235,29 @@ export const config = {
       position: "Data Analyst / Data Engineer",
       company: "Cecotec Innovaciones",
       period: "2025 - Present",
-      location: "Valencia, Spain",
       description:
         "Designing analytics-ready data systems for business planning and reporting, combining PostgreSQL schema design, SQL analysis, and Python ETL automation.",
-      responsibilities: [
-        "Designed PostgreSQL schemas for business analytics and strategic sales planning",
-        "Built Python ELT/ETL workflows for automated ingestion and cleaning",
-        "Streamlined reporting workflows to improve consistency and efficiency",
-        "Worked with Git, Docker, and Docker Compose for reproducible environments",
-      ],
-      technologies: ["Python", "PostgreSQL", "SQL", "ETL", "Docker", "Git"],
     },
     {
       position: "Master's Degree in Artificial Intelligence",
       company: "EDEM",
       period: "2025 - Present",
-      location: "Valencia, Spain",
       description:
         "Advanced study of applied machine learning and generative AI, with a focus on LLM systems, evaluation, and end-to-end AI product development.",
-      responsibilities: [
-        "Building practical LLM applications with RAG and agentic patterns",
-        "Deepening ML foundations for modeling, evaluation, and deployment",
-        "Working on product-oriented AI systems with business relevance",
-        "Exploring experimentation, orchestration, and multimodal workflows",
-      ],
-      technologies: ["Generative AI", "LLMs", "RAG", "Agents", "Evaluation", "Python"],
     },
     {
       position: "BSc in Physics",
       company: "Universitat de València, Università di Torino & UNED",
       period: "2019 - 2025",
-      location: "Valencia / Turin",
       description:
         "Physics training with strong mathematical and analytical foundations, developed through research-oriented study and problem-solving across multiple academic environments.",
-      responsibilities: [
-        "Built a strong foundation in mathematics, modeling, and quantitative reasoning",
-        "Worked across academic contexts in Spain and Italy",
-        "Developed rigorous problem-solving habits transferrable to AI engineering",
-        "Combined scientific thinking with hands-on technical learning",
-      ],
-      technologies: ["Physics", "Mathematics", "Scientific Thinking", "Data Analysis"],
     },
     {
       position: "Key Holder",
       company: "Hollister Co.",
       period: "2021 - 2022",
-      location: "Valencia, Spain",
       description:
         "Supported daily store operations while monitoring sales and inventory signals to improve replenishment and performance.",
-      responsibilities: [
-        "Monitored sales and inventory metrics to support store performance",
-        "Optimized replenishment decisions based on operational demand",
-        "Coordinated day-to-day operations as part of the floor leadership team",
-        "Developed customer-facing communication and execution skills",
-      ],
-      technologies: ["Operations", "Inventory", "Sales Metrics", "Team Coordination"],
     },
   ],
   projects: [
@@ -504,4 +465,4 @@ export const config = {
       },
     ],
   ],
-} satisfies SiteConfig;
+};
