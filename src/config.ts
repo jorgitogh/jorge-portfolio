@@ -172,7 +172,7 @@ export const config: SiteConfig = {
     roleLines: ["AI Engineer", "ML / Generative AI"],
     photo: {
       portrait: "/images/jorge-play.jpg",
-      transparent: "/images/mypicnbg.png",
+      transparent: "/images/jorge-play.jpg",
       alt: "Jorge Greus Herrero portrait",
     },
   },
